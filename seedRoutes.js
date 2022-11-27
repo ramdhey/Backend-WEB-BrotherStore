@@ -13,7 +13,7 @@ SeedRouter.get('/',async(req,res)=>{
     await User.remove({})
     const createdUser = await User.insertMany(data.user)
 
-    res.send({createdUser})
+    res.send({createdUser,createdProduct})
 
 })
 
